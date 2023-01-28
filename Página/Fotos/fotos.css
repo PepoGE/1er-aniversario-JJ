@@ -8,9 +8,24 @@
 */
 
 
+main{   
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
 .bloque{
     display: flex;
     justify-content: center;
+    gap: 2%;
+    margin: 2%;
+}
+
+.bloque-2{
+    display: flex;
+    justify-content:space-around;
     gap: 2%;
     margin: 2%;
 }
@@ -105,9 +120,8 @@ figcaption{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 43.5%;
+    width: 30%;
     background-color: #ffd3d3;
-    height: 50%;
     padding: 2%;
     border-radius: 5px;
 
