@@ -33,7 +33,7 @@ header section{
 
 
 header nav {
-    width: 60%;
+    width: 70%;
     margin-right: 10%;
 }
 
@@ -53,7 +53,7 @@ nav {
 
 ul{
     display: flex;
-    font-size: 22px;
+    font-size: 2em;
 }
 
 .nav-list{
@@ -79,6 +79,7 @@ background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, F
     justify-content: center;
     align-items: center;
     background-color: white;
+    text-align: center;
     
 }
 

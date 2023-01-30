@@ -24,6 +24,7 @@ main{
 }
 
 .bloque-2{
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
     gap: 2%;
@@ -31,6 +32,7 @@ main{
 }
 
 .bloque-de-3{
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +45,7 @@ main{
 }
 
 .bloque-de-3 img{
-    width: 150px;
+    width: 90%;
     border-radius: 5px;
     height: 250px;
     filter: saturate(1);
@@ -72,6 +74,7 @@ figcaption{
 }
 
 .bloque-de-1{
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +123,7 @@ figcaption{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     background-color: #ffd3d3;
     padding: 2%;
     border-radius: 5px;
