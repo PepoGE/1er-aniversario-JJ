@@ -1,0 +1,28 @@
+.mesa{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2em;
+}
+
+.tarjeta{
+    background-color: beige;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoTarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(123, 125, 255);
+    width: 1em;
+    height: 1em;
+    font-size: 2em;
+}
