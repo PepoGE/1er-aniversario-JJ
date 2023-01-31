@@ -21,17 +21,25 @@ function repartirTarjetas() {
 
     tarjeta.innerHTML =
       '<div id="tarjeta" class="tarjeta">' +
-      '<div id="contenidoTarjeta" class="contenidoTarjeta">' +
       '<img src="' +
       elemento +
       '" class = "contenidoTarjeta" alt="foto-' +
       index +
       '" srcset=""></img>' +
-      "</div>" +
       "</div>";
 
     mesa.appendChild(tarjeta);
   });
 }
 
+function descubrir() {
+  this.classList.add("descubierta");
+}
+
 repartirTarjetas();
+
+document
+  .querySelectorAll(".tarjeta, .contenidoTarjeta img")
+  .forEach(function (elemento) {
+    elemento.addEventListener("click", descubrir);
+  });

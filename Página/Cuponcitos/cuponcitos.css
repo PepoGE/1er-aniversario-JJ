@@ -9,7 +9,6 @@ body{
 .mesa{
     width: 85vw;
     height: 100vh;
-    background-color: aqua;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -18,24 +17,41 @@ body{
 }
 
 .tarjeta{
-    background-color: #FFFFFF;
-    width: 10em;
-    height: 13em;
+    background-image: url(https://solitarios-online.com/media/cards/back.png);
+    background-size:cover;
+    width: 9.5em;
+    height: 13.2em;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-style: solid;
-    border-radius: 3%;
+    border-radius: 2%;  
+    transition: .3s;
+    backface-visibility: hidden;
+    cursor: pointer;
+    transform-style: preserve-3d;
 }
 
-.contenidoTarjeta img{
+.contenidoTarjeta{
+    width: 9em;
+    height: 12em;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(123, 125, 255);
-    width: 8em;
-    height: 11em;
+    background-color: white;
     border-style: solid;
-    border-radius: 4%;
+    border-radius: 3%;
+    transition: .3s;
+}
+
+.contenidoTarjeta::selection{
+    background: transparent;
+}
+
+.tarjeta.descubierta{
+    transform: rotateY(-180deg);
+    backface-visibility: visible;
 }
