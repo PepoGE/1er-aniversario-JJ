@@ -16,7 +16,7 @@ function repartirTarjetas() {
 
   mesa.innerHTML = "";
 
-  totalTarjetas.forEach(function (elemento) {
+  totalTarjetas.forEach(function (elemento, index) {
     var tarjeta = document.createElement("div");
 
     tarjeta.innerHTML =
@@ -24,7 +24,9 @@ function repartirTarjetas() {
       '<div id="contenidoTarjeta" class="contenidoTarjeta">' +
       '<img src="' +
       elemento +
-      '" class = "contenidoTarjeta" alt="" srcset=""></img>' +
+      '" class = "contenidoTarjeta" alt="foto-' +
+      index +
+      '" srcset=""></img>' +
       "</div>" +
       "</div>";
 
