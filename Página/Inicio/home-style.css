@@ -15,7 +15,10 @@ body {
 header {
     display: flex;
     width: 100%;
-    background-color: #ffa4a4;
+    background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 5em;
     border: 2px;
     border-style: solid;
     border-color: #965959;
@@ -37,12 +40,8 @@ header nav {
     margin-right: 10%;
 }
 
-
-
-
 .logo{
-    width: 60%;
-    height: 60%;
+    width: 5em;
 }
 
 nav {
@@ -118,7 +117,10 @@ background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, F
 footer{
     display: flex;
     height: 300px;
-    background-color: #ffa4a4;
+    background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border: 2px;
     border-style: solid;
     border-color: #965959;
