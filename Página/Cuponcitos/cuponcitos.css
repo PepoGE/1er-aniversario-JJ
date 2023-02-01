@@ -55,3 +55,7 @@ body{
     transform: rotateY(-180deg);
     backface-visibility: visible;
 }
+
+.acertada{
+    opacity: 0;
+}
