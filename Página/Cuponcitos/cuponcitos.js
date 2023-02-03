@@ -57,13 +57,16 @@ function descubrir() {
     return;
   }
  
-  if (descubiertas[0].dataset.valor === descubiertas[1].dataset.valor){
+ compararTarjetas(descubiertas);
+
+}
+
+function compararTarjetas(tarjetasPorComparar){
+  if (tarjetasPorComparar[0].dataset.valor === tarjetasPorComparar[1].dataset.valor){
     console.log("correcto");
   } else {
-    console.log("incorrecto")
+    console.log("incorrecto");
   }
-
-
 }
 
 repartirTarjetas();
