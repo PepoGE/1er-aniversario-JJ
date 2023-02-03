@@ -28,15 +28,14 @@ function repartirTarjetas() {
     var tarjeta = document.createElement("div");
 
     tarjeta.innerHTML =
-      '<div id="tarjeta" class="tarjeta">' +
+      '<div class="tarjeta" data-valor= ' +
+      elemento+
+      ">" + 
       '<img src="' +
       elemento +
-      '" class = "contenidoTarjeta" ' +
-      'alt="foto-' +
+      '" class = "contenidoTarjeta" alt = "foto-'+
       index +
-      '" id = "foto-' +
-      elemento +
-      '" srcset=""></img>' +
+      '" />' +
       "</div>";
 
     mesa.appendChild(tarjeta);
@@ -57,14 +56,14 @@ function descubrir() {
   if (descubiertas.length < 2) {
     return;
   }
-
-  var imagenAbierta = document.querySelectorAll(".descubierta img");
-
-  if (imagenAbierta[0].id == imagenAbierta[1].id) {
+ 
+  if (descubiertas[0].dataset.valor === descubiertas[1].dataset.valor){
     console.log("correcto");
   } else {
-    console.log("incorrecto");
+    console.log("incorrecto")
   }
+
+
 }
 
 repartirTarjetas();
