@@ -1,16 +1,16 @@
-body{
-    background: #e53935;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+main {
+    background: #e53935;
+    background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+    background: linear-gradient(to right, #e35d5b, #e53935);
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.mesa{
+.mesa {
     width: 85vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -18,7 +18,7 @@ background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, F
     flex-wrap: wrap;
 }
 
-.tarjeta{
+.tarjeta {
     background-image: url(../../Imagenes/Amorcito/Fondos-memorama/F5.jpg);
     background-size: contain;
     width: 9.5em;
@@ -28,14 +28,14 @@ background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, F
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-style: solid;
-    border-radius: 2.5%;  
-    transition: .3s;
+    border-radius: 2.5%;
+    transition: 0.3s;
     backface-visibility: hidden;
     cursor: pointer;
     transform-style: preserve-3d;
 }
 
-.contenidoTarjeta{
+.contenidoTarjeta {
     width: 9.5em;
     height: 13em;
     transform: rotateY(-180deg);
@@ -47,64 +47,67 @@ background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, F
     border-style: solid;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-style: solid;
-    border-radius: 2.5%;  
-    transition: .3s;
+    border-radius: 2.5%;
+    transition: 0.3s;
 }
 
-.contenidoTarjeta::selection{
+.contenidoTarjeta::selection {
     background: transparent;
 }
 
-.tarjeta.descubierta{
+.tarjeta.descubierta {
     transform: rotateY(-180deg);
 }
 
-
 @keyframes error {
+
     10%,
     90% {
-      transform: rotateY(-180deg) translateX(-1px);
+        transform: rotateY(-180deg) translateX(-1px);
     }
+
     20%,
     80% {
-      transform: rotateY(-180deg) translateX(2px);
+        transform: rotateY(-180deg) translateX(2px);
     }
+
     30%,
     50%,
     70% {
-      transform: rotateY(-180deg) translateX(-4px);
+        transform: rotateY(-180deg) translateX(-4px);
     }
+
     40%,
     60% {
-      transform: rotateY(-180deg) translateX(4px);
+        transform: rotateY(-180deg) translateX(4px);
     }
-  }
-  
-  @keyframes acierto {
+}
+
+@keyframes acierto {
     from {
-      transform: rotateY(-180deg) scale3d(1, 1, 1);
-      opacity: 1;
+        transform: rotateY(-180deg) scale3d(1, 1, 1);
+        opacity: 1;
     }
-  
+
     25% {
-      transform: rotateY(-180deg) scale3d(1.1, 1.1, 1.1);
-      opacity: 1;
+        transform: rotateY(-180deg) scale3d(1.1, 1.1, 1.1);
+        opacity: 1;
     }
-  
+
     to {
-      transform: rotateY(-180deg) scale3d(1, 1, 1);
-      opacity: 0;
+        transform: rotateY(-180deg) scale3d(1, 1, 1);
+        opacity: 0;
     }
-  }
-  
-  .acertada {
+}
+
+.acertada {
     pointer-events: none;
-  }
-  
-  .acertada .contenidoTarjeta {
+}
+
+.acertada .contenidoTarjeta {
     animation: acierto 1.3s ease-in-out forwards;
-  }
-  
-  .error {
+}
+
+.error {
     animation: error 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  }
+}

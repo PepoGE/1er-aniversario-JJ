@@ -1,4 +1,3 @@
-
 /*
 .color1 { #dfcccc };
 .color2 { #ffd3d3 };
@@ -8,22 +7,22 @@
 */
 
 
-main{   
-      padding-top: 2%;
+main {
+    padding-top: 2%;
     padding-bottom: 2%;
-    background: #FFAFBD;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FFAFBD;
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD);
 }
 
-.bloque{
+.bloque {
     display: flex;
     justify-content: center;
     gap: 2%;
     margin: 2%;
 }
 
-.bloque-2{
+.bloque-2 {
 
     text-align: center;
     display: flex;
@@ -32,7 +31,7 @@ main{
     margin: 2%;
 }
 
-.bloque-de-3{
+.bloque-de-3 {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -41,12 +40,12 @@ main{
     width: 27%;
     background-color: #FF9A8B;
     background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-     height: 60%;
+    height: 60%;
     padding: 2%;
     border-radius: 5px;
 }
 
-.bloque-de-3 img{
+.bloque-de-3 img {
     width: 90%;
     border-radius: 5px;
     height: 250px;
@@ -54,28 +53,28 @@ main{
     transition: .5s;
 }
 
-.bloque-de-3 img:hover{
+.bloque-de-3 img:hover {
     filter: saturate(1.3);
 }
 
 
-figure{
+figure {
     transition: .5s;
     color: #c17575;
     font-family: 'Dancing Script', cursive;
 }
 
-figcaption{
+figcaption {
     font-size: 18px;
     padding-top: 1.5%;
 }
 
-.bloque-de-3:hover{
+.bloque-de-3:hover {
     transform: scale(1.1);
     color: #870e0e;
 }
 
-.bloque-de-1{
+.bloque-de-1 {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -83,20 +82,20 @@ figcaption{
     flex-direction: column;
     width: 93%;
     background-color: #FF9A8B;
-background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-  height: 50%;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    height: 50%;
     padding: 2%;
     border-radius: 5px;
 
 }
 
-.bloque-de-1:hover{
+.bloque-de-1:hover {
     transform: scale(1.05);
     color: #870e0e;
 
 }
 
-.bloque-de-1 img{
+.bloque-de-1 img {
     width: 92%;
     border-radius: 5px;
     height: 400px;
@@ -104,12 +103,12 @@ background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     transition: .5s;
 }
 
-.bloque-de-1 img:hover{
+.bloque-de-1 img:hover {
     filter: saturate(1.3);
 }
 
 
-.bloque-de-2 img{
+.bloque-de-2 img {
     width: 84%;
     border-radius: 5px;
     height: 325px;
@@ -117,11 +116,11 @@ background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     transition: .5s;
 }
 
-.bloque-de-2 img:hover{
+.bloque-de-2 img:hover {
     filter: saturate(1.3);
 }
 
-.bloque-de-2{
+.bloque-de-2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,12 +128,12 @@ background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     width: 25%;
     background-color: #FF9A8B;
     background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-   padding: 2%;
+    padding: 2%;
     border-radius: 5px;
 
 }
 
-.bloque-de-2:hover{
+.bloque-de-2:hover {
     transform: scale(1.05);
     color: #870e0e;
 
