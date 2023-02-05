@@ -1,4 +1,6 @@
 main {
+    width: 100vw;
+    height: 90vh;
     background: #e53935;
     background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
     background: linear-gradient(to right, #e35d5b, #e53935);
@@ -9,8 +11,8 @@ main {
 }
 
 .mesa {
-    width: 85vw;
-    height: 90vh;
+    width: 90%;
+    height: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
