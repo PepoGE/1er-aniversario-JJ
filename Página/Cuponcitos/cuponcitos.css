@@ -1,5 +1,7 @@
 body{
-    background-color: brown;
+    background: #e53935;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,16 +19,16 @@ body{
 }
 
 .tarjeta{
-    background-image: url(https://solitarios-online.com/media/cards/back.png);
-    background-size:cover;
+    background-image: url(../../Imagenes/Amorcito/Fondos-memorama/F5.jpg);
+    background-size: contain;
     width: 9.5em;
-    height: 13.2em;
+    height: 13em;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-style: solid;
-    border-radius: 2%;  
+    border-radius: 2.5%;  
     transition: .3s;
     backface-visibility: hidden;
     cursor: pointer;
@@ -34,8 +36,8 @@ body{
 }
 
 .contenidoTarjeta{
-    width: 9em;
-    height: 12em;
+    width: 9.5em;
+    height: 13em;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
     display: flex;
@@ -43,7 +45,9 @@ body{
     align-items: center;
     background-color: white;
     border-style: solid;
-    border-radius: 3%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-style: solid;
+    border-radius: 2.5%;  
     transition: .3s;
 }
 
