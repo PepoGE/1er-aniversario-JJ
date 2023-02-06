@@ -1,72 +1,72 @@
-
-function ObtenerTextoDelUsuario(){
-    let textoIngresado = document.getElementById("ingresarTexto").value;
-    return textoIngresado;
+function ObtenerTextoDelUsuario() {
+  let textoIngresado = document.getElementById("ingresarTexto").value;
+  return textoIngresado;
 }
 
-function Encriptar(){
-    var textoIngresado = ObtenerTextoDelUsuario();
-    var textoEncriptado = textoIngresado.replace(/e/img, "enter");
-    textoEncriptado = textoEncriptado.replace(/i/img, "imes");
-    textoEncriptado = textoEncriptado.replace(/a/img, "ai");
-    textoEncriptado = textoEncriptado.replace(/o/img, "ober");
-    textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
-    console.log(textoEncriptado);
-    return textoEncriptado;
+function Encriptar() {
+  var textoIngresado = ObtenerTextoDelUsuario();
+  var textoEncriptado = textoIngresado.replace(/e/gim, "enter");
+  textoEncriptado = textoEncriptado.replace(/i/gim, "imes");
+  textoEncriptado = textoEncriptado.replace(/a/gim, "ai");
+  textoEncriptado = textoEncriptado.replace(/o/gim, "ober");
+  textoEncriptado = textoEncriptado.replace(/u/gim, "ufat");
+  console.log(textoEncriptado);
+  return textoEncriptado;
 }
 
-function Desencriptar(){
-    var textoIngresado = ObtenerTextoDelUsuario();
-    var textoDesencriptado = textoIngresado.replace(/enter/img, "e");
-    textoDesencriptado = textoDesencriptado.replace(/imes/img, "i");
-    textoDesencriptado = textoDesencriptado.replace(/ai/img, "a");
-    textoDesencriptado = textoDesencriptado.replace(/ober/img, "o");
-    textoDesencriptado = textoDesencriptado.replace(/ufat/img, "u");
-    console.log(textoDesencriptado);
-    return textoDesencriptado;
+function Desencriptar() {
+  var textoIngresado = ObtenerTextoDelUsuario();
+  var textoDesencriptado = textoIngresado.replace(/enter/gim, "e");
+  textoDesencriptado = textoDesencriptado.replace(/imes/gim, "i");
+  textoDesencriptado = textoDesencriptado.replace(/ai/gim, "a");
+  textoDesencriptado = textoDesencriptado.replace(/ober/gim, "o");
+  textoDesencriptado = textoDesencriptado.replace(/ufat/gim, "u");
+  console.log(textoDesencriptado);
+  return textoDesencriptado;
 }
 
-{ //Ocultar Elementos
-function OcultarImagen(){
+{
+  //Ocultar Elementos
+  function OcultarImagen() {
     document.getElementById("img-muneco").style.display = "none";
-}
-function OcultarTextosResultados(){
+  }
+  function OcultarTextosResultados() {
     document.getElementById("textos-de-resultados").style.display = "none";
-}
+  }
 
-function OcultarTextoResultadoDefault(){
+  function OcultarTextoResultadoDefault() {
     OcultarImagen();
     OcultarTextosResultados();
-}
-}
-
-function CambiarTextoEncriptado(){
-    var texto = Encriptar();
-    document.getElementById("text-result-encrypted").style.display = "flex"; 
-    document.getElementById("text-encrypted").innerText = texto; 
+  }
 }
 
-function CambiarTextoDesencriptado(){
-    var texto = Desencriptar();
-    document.getElementById("text-result-encrypted").style.display = "flex"; 
-    document.getElementById("text-encrypted").innerText = texto; 
+function CambiarTextoEncriptado() {
+  var texto = Encriptar();
+  document.getElementById("text-result-encrypted").style.display = "flex";
+  document.getElementById("text-encrypted").innerText = texto;
 }
 
-function AlternarTextoEncriptado(){
-    OcultarTextoResultadoDefault();
-    CambiarTextoEncriptado();
+function CambiarTextoDesencriptado() {
+  var texto = Desencriptar();
+  document.getElementById("text-result-encrypted").style.display = "flex";
+  document.getElementById("text-encrypted").innerText = texto;
 }
 
-function AlternarTextoDesencriptado(){
-    OcultarTextoResultadoDefault();
-    CambiarTextoDesencriptado();
+function AlternarTextoEncriptado() {
+  OcultarTextoResultadoDefault();
+  CambiarTextoEncriptado();
 }
 
-function CopiarTexto(){
-    let mensajeCopiado = document.getElementById("text-encrypted");
-    mensajeCopiado.select();
-    mensajeCopiado.setSelectionRange(0, 99999); 
-    navigator.clipboard.writeText(mensajeCopiado.value);
+function AlternarTextoDesencriptado() {
+  OcultarTextoResultadoDefault();
+  CambiarTextoDesencriptado();
+}
+
+function CopiarTexto() {
+  let mensajeCopiado = document.getElementById("text-encrypted");
+  mensajeCopiado.select();
+  mensajeCopiado.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(mensajeCopiado.value);
 }
 
 document.getElementById("encriptar").onclick = AlternarTextoEncriptado;
@@ -74,5 +74,8 @@ document.getElementById("desencriptar").onclick = AlternarTextoDesencriptado;
 document.getElementById("copiar").onclick = CopiarTexto;
 
 let textArea = document.getElementById("ingresarTexto");
+
+/* AÑADIR AL FINALIZAR CODIGO
 textArea.focus();
 textArea.selectionStart = textArea.value.length;
+*/
