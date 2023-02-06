@@ -208,3 +208,39 @@ footer h2 {
 .iconos {
     width: 50%;
 }
+
+
+@media (max-width:1170px) {
+    ul {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width:1000px) {
+
+    header {
+        min-height: 12.5vh;
+    }
+
+    .logo {
+        height: 12.5vh;
+    }
+
+    ul {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        min-height: 10vh;
+    }
+
+    .logo {
+        height: 10vh;
+    }
+
+    ul {
+        font-size: 1.25em;
+    }
+}
