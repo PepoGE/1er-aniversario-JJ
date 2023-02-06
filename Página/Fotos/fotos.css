@@ -16,6 +16,7 @@ main {
 }
 
 .bloque {
+    text-align: center;
     display: flex;
     justify-content: center;
     gap: 2%;
@@ -23,12 +24,92 @@ main {
 }
 
 .bloque-2 {
-
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     gap: 2%;
     margin: 2%;
+}
+
+
+.bloque-de-1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75.5%;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    height: 70vh;
+    padding: 4%;
+    border-radius: 5px;
+
+}
+
+.bloque-de-1:hover {
+    transform: scale(1.05);
+    color: #870e0e;
+
+}
+
+.bloque-de-1 img {
+    width: 80%;
+    border-radius: 5px;
+    height: 100%;
+    filter: saturate(1);
+    transition: .5s;
+    filter: blur(.25em);
+}
+
+.bloque-de-1 img:hover {
+    filter: saturate(1.3);
+    filter: blur(0em);
+}
+
+
+.bloque-de-1 figcaption {
+    font-size: 3em;
+    padding-top: 2%;
+}
+
+.bloque-de-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 20%;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    padding: 2%;
+    border-radius: 5px;
+
+}
+
+.bloque-de-2 img {
+    width: 100%;
+    border-radius: 5px;
+    height: 90%;
+    filter: saturate(1.0);
+    transition: .5s;
+    filter: blur(.25em);
+}
+
+.bloque-de-2 img:hover {
+    filter: saturate(1.3);
+    filter: blur(0em);
+}
+
+
+.bloque-de-2:hover {
+    transform: scale(1.1);
+    color: #870e0e;
+}
+
+.bloque-de-2 figcaption {
+    font-size: 2.2em;
+    padding-top: 5%;
 }
 
 .bloque-de-3 {
@@ -37,10 +118,10 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 27%;
+    width: 22.5%;
     background-color: #FF9A8B;
     background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-    height: 60%;
+    height: 70vh;
     padding: 2%;
     border-radius: 5px;
 }
@@ -48,13 +129,21 @@ main {
 .bloque-de-3 img {
     width: 90%;
     border-radius: 5px;
-    height: 250px;
+    height: 90%;
     filter: saturate(1);
+    filter: blur(.25em);
     transition: .5s;
 }
 
 .bloque-de-3 img:hover {
     filter: saturate(1.3);
+    filter: blur(0em);
+}
+
+
+.bloque-de-3 figcaption {
+    font-size: 2.5em;
+    padding-top: 5%;
 }
 
 
@@ -72,69 +161,4 @@ figcaption {
 .bloque-de-3:hover {
     transform: scale(1.1);
     color: #870e0e;
-}
-
-.bloque-de-1 {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 93%;
-    background-color: #FF9A8B;
-    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-    height: 50%;
-    padding: 2%;
-    border-radius: 5px;
-
-}
-
-.bloque-de-1:hover {
-    transform: scale(1.05);
-    color: #870e0e;
-
-}
-
-.bloque-de-1 img {
-    width: 92%;
-    border-radius: 5px;
-    height: 400px;
-    filter: saturate(1);
-    transition: .5s;
-}
-
-.bloque-de-1 img:hover {
-    filter: saturate(1.3);
-}
-
-
-.bloque-de-2 img {
-    width: 84%;
-    border-radius: 5px;
-    height: 325px;
-    filter: saturate(1.0);
-    transition: .5s;
-}
-
-.bloque-de-2 img:hover {
-    filter: saturate(1.3);
-}
-
-.bloque-de-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 25%;
-    background-color: #FF9A8B;
-    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-    padding: 2%;
-    border-radius: 5px;
-
-}
-
-.bloque-de-2:hover {
-    transform: scale(1.05);
-    color: #870e0e;
-
 }
