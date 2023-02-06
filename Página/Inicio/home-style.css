@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    min-height: 10vh;
+    min-height: 15vh;
     min-width: 100vw;
     display: flex;
     width: 100%;
@@ -38,7 +38,7 @@ header nav {
 }
 
 .logo {
-    width: 5em;
+    height: 15vh;
 }
 
 nav {
