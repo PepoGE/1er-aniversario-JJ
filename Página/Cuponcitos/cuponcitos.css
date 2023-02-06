@@ -37,6 +37,10 @@ main {
     transform-style: preserve-3d;
 }
 
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+
 .contenidoTarjeta {
     width: 9.5em;
     height: 13em;
