@@ -103,7 +103,7 @@ main {
 
 
 .bloque-de-2:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: #870e0e;
 }
 
@@ -159,6 +159,6 @@ figcaption {
 }
 
 .bloque-de-3:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: #870e0e;
 }
