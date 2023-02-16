@@ -12,7 +12,7 @@ body {
 
 header {
     min-height: 15vh;
-    min-width: 100vw;
+    width: 100%;
     display: flex;
     width: 100%;
     background: #ee9ca7;
@@ -33,7 +33,7 @@ header section {
 }
 
 header nav {
-    width: 70%;
+    width: 60%;
     margin-right: 10%;
 }
 
@@ -111,8 +111,8 @@ ul {
 
 footer {
     display: flex;
-    min-height: 40vh;
-    min-width: 100vw;
+    height: 50vh;
+    width: 100%;
     background: #ee9ca7;
     background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);
     background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
