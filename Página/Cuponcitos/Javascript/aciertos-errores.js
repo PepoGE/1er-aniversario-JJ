@@ -5,14 +5,13 @@ function acertar(tarjetasAcertadas) {
 }
 
 function fallar(tarjetasFalladas) {
-
   tarjetasFalladas.forEach(function (elemento) {
     elemento.classList.add("error");
   });
-  setTimeout(function(){
+  setTimeout(function () {
     tarjetasFalladas.forEach(function (elemento) {
       elemento.classList.remove("descubierta");
       elemento.classList.remove("error");
-  });
+    });
   }, 1000);
 }
