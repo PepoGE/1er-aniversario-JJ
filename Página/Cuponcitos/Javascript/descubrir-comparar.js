@@ -17,6 +17,7 @@ function descubrir() {
   }
 
   compararTarjetas(descubiertas);
+  actualizarContador();
   tarjetasPendientes = document.querySelectorAll(".tarjeta:not(.acertada)");
   if (tarjetasPendientes.length === 0) {
     setTimeout(finalizar, 1000);
