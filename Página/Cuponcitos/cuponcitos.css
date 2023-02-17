@@ -9,7 +9,13 @@ main {
     align-content: center;
 }
 
+
 .mesa {
+    display: none;
+}
+
+
+.mesa.visible {
     width: 90%;
     height: 90%;
     margin: 5%;
@@ -122,22 +128,21 @@ main {
 .game-over,
 .end-game {
     display: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: var(--gradient);
+    width: 100%;
+    height: 100%;
 }
 
 .sube-nivel.visible,
 .game-over.visible,
 .end-game.visible {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal {
     background: white;
+    width: 40%;
     padding: 3rem 3rem 1rem;
     margin: auto;
     text-align: center;
@@ -150,46 +155,59 @@ main {
 }
 
 .modal h2 {
-    color: var(--orange);
-    font-family: var(--font-display);
-    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    margin: 1rem 0;
+    font-size: 3.5rem;
 }
 
 .modal p {
+    font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
 }
 
 .modal button {
-    margin: 3rem 0;
+    font-family: 'Dancing Script', cursive;
+    margin: 1rem 0;
 }
+
 
 button {
-    cursor: pointer;
-    border: 0;
-    background-image: var(--gradient);
-    padding: 0.75rem 4rem;
-    border-radius: 5rem;
-    color: white;
-    font-family: var(--font-display);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    line-height: 1;
-    transition: 0.3s;
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    padding: 1.5em 2.5em;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 1.5em;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
 }
 
-button:hover,
-button:focus {
-    opacity: 0.9;
-    outline: 0;
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #bb1818;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
 }
 
-.modal .reiniciar {
-    color: var(--hotpink);
-    background: transparent;
-    border: 0;
-    text-transform: capitalize;
-    font-family: var(--font);
-    font-size: 1rem;
-    margin: 0;
+button:hover {
+    color: #e8e8e8;
+}
+
+button:hover::before {
+    width: 100%;
 }
