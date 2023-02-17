@@ -6,5 +6,6 @@ function finalizar() {
   } else {
     document.querySelector("#endGame").classList.add("visible");
     document.querySelector("#mesa").classList.remove("visible");
+    document.querySelector("#sonido-endGame").play();
   }
 }
