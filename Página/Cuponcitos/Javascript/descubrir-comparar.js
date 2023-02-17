@@ -10,6 +10,7 @@ function descubrir() {
   }
 
   this.classList.add("descubierta");
+  document.querySelector("#sonido-carta").cloneNode().play();
 
   descubiertas = document.querySelectorAll(".descubierta:not(.acertada)");
   if (descubiertas.length < 2) {
