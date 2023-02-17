@@ -1,13 +1,14 @@
-function RevolverTarjetas() {
+function RevolverTarjetas(lasTarjetas) {
+  var totalTarjetas = lasTarjetas.concat(lasTarjetas);
   var resultado = totalTarjetas.sort(function () {
     return 0.5 - Math.random();
   });
   return resultado;
 }
 
-function repartirTarjetas() {
+function repartirTarjetas(lasTarjetas) {
   var mesa = document.querySelector("#mesa");
-  var tarjetasRevueltas = RevolverTarjetas();
+  var tarjetasRevueltas = RevolverTarjetas(lasTarjetas);
 
   mesa.innerHTML = "";
 
