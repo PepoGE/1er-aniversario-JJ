@@ -3,10 +3,43 @@ main {
     background: #e53935;
     background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
     background: linear-gradient(to right, #e35d5b, #e53935);
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.cabecera {
+    font-family: 'Dancing Script', cursive;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nivel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecera-titulo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    color: rgb(0, 250, 250);
+}
+
+.cabecera-num {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(0, 250, 250);
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 0.9;
 }
 
 
@@ -16,9 +49,8 @@ main {
 
 
 .mesa.visible {
-    width: 90%;
-    height: 90%;
-    margin: 5%;
+    width: 100%;
+    height: 60vh;
     display: flex;
     align-content: center;
     justify-content: center;
