@@ -10,6 +10,16 @@ function iniciar() {
   });
 }
 
+function reiniciar (){
+  nivelActual = 0;
+  actualizarNivel();
+  iniciar();
+}
+
 iniciar();
 
-document.querySelector(".reiniciar").addEventListener("click", iniciar);
+document.querySelectorAll(".reiniciar").forEach(function (elemento){
+ elemento.addEventListener("click", reiniciar);
+});
+
+document.querySelector("#subir").addEventListener("click", cargarNuevoNivel);

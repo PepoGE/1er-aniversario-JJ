@@ -1,5 +1,10 @@
 function finalizar() {
-  document.querySelector("#sube-nivel").classList.add("visible");
-  document.querySelector("#mesa").classList.remove("visible");
-  console.log("final");
+  if(nivelActual < niveles.length - 1){
+    document.querySelector("#sube-nivel").classList.add("visible");
+    document.querySelector("#mesa").classList.remove("visible");
+  } else {
+    document.querySelector("#endGame").classList.add("visible");
+    document.querySelector("#mesa").classList.remove("visible");
+  }
+  
 }
