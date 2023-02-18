@@ -8,6 +8,7 @@ var foto7 = "../Cuponcitos/Imagenes-Cupones/foto-piojito.jpg";
 var foto8 = "../Cuponcitos/Imagenes-Cupones/foto-pizza.jpeg";
 
 var movimientos = 0;
+var cupon = 0;
 var grupoTarjetas = [
   [foto1, foto2],
   [foto3, foto4],
@@ -19,14 +20,20 @@ var niveles = [
   {
     tarjetas: grupoTarjetas[0],
     movimientosMax: 3,
+    cuponActual: 1,
+    nivel: 0,
   },
   {
     tarjetas: grupoTarjetas[0].concat(grupoTarjetas[1]),
     movimientosMax: 8,
+    cuponActual: 2,
+    nivel: 1,
   },
   {
     tarjetas: grupoTarjetas[0].concat(grupoTarjetas[1], grupoTarjetas[2]),
     movimientosMax: 12,
+    cuponActual: 3,
+    nivel: 2,
   },
   {
     tarjetas: grupoTarjetas[0].concat(
@@ -35,5 +42,7 @@ var niveles = [
       grupoTarjetas[3]
     ),
     movimientosMax: 20,
+    cuponActual: 4,
+    nivel: 3,
   },
 ];
