@@ -79,3 +79,16 @@ let textArea = document.getElementById("ingresarTexto");
 textArea.focus();
 textArea.selectionStart = textArea.value.length;
 */
+
+function desplegarSecretos() {
+  document.querySelector("#lista-secretos").classList.add("visible");
+}
+
+function cerrarSecretos() {
+  document.querySelector("#lista-secretos").classList.remove("visible");
+}
+
+document
+  .querySelector("#boton-secretos")
+  .addEventListener("click", desplegarSecretos);
+document.querySelector("#close").addEventListener("click", cerrarSecretos);
