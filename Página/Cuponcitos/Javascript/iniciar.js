@@ -13,6 +13,9 @@ function iniciar() {
   document.querySelectorAll(".tarjeta").forEach(function (elemento) {
     elemento.addEventListener("click", descubrir);
   });
+  document.querySelectorAll(".tarjeta-chiquita").forEach(function (elemento) {
+    elemento.addEventListener("click", descubrir);
+  });
 }
 
 function reiniciar() {

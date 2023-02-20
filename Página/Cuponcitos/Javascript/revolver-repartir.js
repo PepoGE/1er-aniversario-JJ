@@ -15,17 +15,29 @@ function repartirTarjetas(lasTarjetas) {
   tarjetasRevueltas.forEach(function (elemento, index) {
     var tarjeta = document.createElement("div");
 
-    tarjeta.innerHTML =
-      '<div class="tarjeta" data-valor= ' +
-      elemento +
-      ">" +
-      '<img src="' +
-      elemento +
-      '" class = "contenidoTarjeta" alt = "foto-' +
-      index +
-      '" />' +
-      "</div>";
-
+    if (niveles[nivelActual].nivel < 3) {
+      tarjeta.innerHTML =
+        '<div class="tarjeta" data-valor= ' +
+        elemento +
+        ">" +
+        '<img src="' +
+        elemento +
+        '" class = "contenidoTarjeta" alt = "foto-' +
+        index +
+        '" />' +
+        "</div>";
+    } else {
+      tarjeta.innerHTML =
+        '<div class="tarjeta-chiquita" data-valor= ' +
+        elemento +
+        ">" +
+        '<img src="' +
+        elemento +
+        '" class = "contenidoTarjeta-chiquita" alt = "foto-' +
+        index +
+        '" />' +
+        "</div>";
+    }
     mesa.appendChild(tarjeta);
   });
 }

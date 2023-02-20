@@ -19,9 +19,19 @@ function descubrir() {
 
   compararTarjetas(descubiertas);
   actualizarContador();
-  tarjetasPendientes = document.querySelectorAll(".tarjeta:not(.acertada)");
-  if (tarjetasPendientes.length === 0) {
-    setTimeout(finalizar, 1000);
+
+  if (niveles[nivelActual].nivel < 3) {
+    tarjetasPendientes = document.querySelectorAll(".tarjeta:not(.acertada)");
+    if (tarjetasPendientes.length === 0) {
+      setTimeout(finalizar, 1000);
+    }
+  } else {
+    tarjetasPendientes = document.querySelectorAll(
+      ".tarjeta-chiquita:not(.acertada)"
+    );
+    if (tarjetasPendientes.length === 0) {
+      setTimeout(finalizar, 1000);
+    }
   }
 }
 
