@@ -39,7 +39,7 @@ var niveles = [
   },
   {
     tarjetas: grupoTarjetas[0].concat(grupoTarjetas[1], grupoTarjetas[2]),
-    movimientosMax: 12,
+    movimientosMax: 10,
     cuponActual: 3,
     nivel: 2,
   },
