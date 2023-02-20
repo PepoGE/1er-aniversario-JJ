@@ -15,7 +15,7 @@ function repartirTarjetas(lasTarjetas) {
   tarjetasRevueltas.forEach(function (elemento, index) {
     var tarjeta = document.createElement("div");
 
-    if (niveles[nivelActual].nivel < 3) {
+    if (niveles[nivelActual].nivel < 5) {
       tarjeta.innerHTML =
         '<div class="tarjeta" data-valor= ' +
         elemento +

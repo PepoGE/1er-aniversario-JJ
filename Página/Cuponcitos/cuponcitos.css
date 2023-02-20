@@ -59,7 +59,9 @@ main {
 
 
 .mesa.visible {
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     height: 60vh;
     display: flex;
     align-content: center;
