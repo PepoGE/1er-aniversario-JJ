@@ -71,7 +71,7 @@ main {
 }
 
 .tarjeta {
-    background-image: url(../../Imagenes/Amorcito/Fondos-memorama/f5.jpg);
+    background-image: url(../Cuponcitos/Imagenes-Cupones/f5.jpg);
     background-size: contain;
     width: 9.5em;
     height: 13em;
@@ -116,7 +116,7 @@ main {
 }
 
 .tarjeta-chiquita {
-    background-image: url(../../Imagenes/Amorcito/Fondos-memorama/f5.jpg);
+    background-image: url(../Cuponcitos/Imagenes-Cupones/f5.jpg);
     background-size: contain;
     width: 7.5em;
     height: 11em;
