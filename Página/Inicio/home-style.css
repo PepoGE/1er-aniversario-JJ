@@ -67,18 +67,16 @@ ul {
 }
 
 .main-home {
-    height: 70vh;
+    padding: 2em 0em;
     background: #9796f0;
     background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
     background: linear-gradient(to right, #fbc7d4, #9796f0);
 }
 
 #frase-home {
-    padding-top: 2em;
     background: #9796f0;
     background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
     background: linear-gradient(to right, #fbc7d4, #9796f0);
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +91,7 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: #ffd3d3;
-    width: 60%;
+    width: 75%;
     border-radius: 1em;
     transition: 3s;
     border: 2px;
@@ -108,7 +106,7 @@ ul {
 
 .caja-frase p {
     font-family: "Dancing Script", cursive;
-    font-size: 40px;
+    font-size: 3em;
     color: #965959;
     font-weight: 600;
     transition: 5s;
@@ -122,8 +120,53 @@ ul {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 1em;
+    padding: 3em 0em;
+}
 
+.video {
+    width: 50vw;
+    height: 50vh;
+}
+
+.contenedor-carta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd3d3;
+    width: 75%;
+    border-radius: 1em;
+    transition: 3s;
+    border: 2px;
+    border-style: solid;
+    border-color: #9659592a;
+}
+
+.carta h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5em;
+    color: #965959;
+    font-weight: 600;
+    transition: 5s;
+    padding-bottom: 0.5em;
+}
+
+.carta p {
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+    color: #965959;
+    font-weight: 600;
+    transition: 5s;
+    padding: 0em 0.5em;
+    text-align: center;
 }
 
 footer {
