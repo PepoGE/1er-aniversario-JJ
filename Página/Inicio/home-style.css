@@ -66,11 +66,19 @@ ul {
     filter: saturate(3.5);
 }
 
-#frase-home {
+.main-home {
+    height: 70vh;
     background: #9796f0;
     background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
     background: linear-gradient(to right, #fbc7d4, #9796f0);
-    height: 300px;
+}
+
+#frase-home {
+    padding-top: 2em;
+    background: #9796f0;
+    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
+    background: linear-gradient(to right, #fbc7d4, #9796f0);
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,13 +87,14 @@ ul {
 }
 
 .caja-frase {
+    padding: 1em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #ffd3d3;
-    height: 150px;
-    width: 80%;
-    border-radius: 5px;
+    width: 60%;
+    border-radius: 1em;
     transition: 3s;
     border: 2px;
     border-style: solid;
@@ -93,7 +102,7 @@ ul {
 }
 
 .caja-frase:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     border-color: #965959;
 }
 
@@ -107,6 +116,14 @@ ul {
 
 .caja-frase p:hover {
     filter: saturate(3.5);
+}
+
+.contenedor-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+
 }
 
 footer {
@@ -176,6 +193,7 @@ footer h2 {
     margin-bottom: 2em;
     width: 65%;
 }
+
 
 .footer {
     border: #965959;
