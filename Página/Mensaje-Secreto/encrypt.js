@@ -75,10 +75,8 @@ document.getElementById("copiar").onclick = CopiarTexto;
 
 let textArea = document.getElementById("ingresarTexto");
 
-/* AÑADIR AL FINALIZAR CODIGO
 textArea.focus();
 textArea.selectionStart = textArea.value.length;
-*/
 
 function desplegarSecretos() {
   document.querySelector("#lista-secretos").classList.add("visible");
