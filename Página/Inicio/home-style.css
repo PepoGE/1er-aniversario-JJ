@@ -111,12 +111,11 @@ ul {
 
 footer {
     display: flex;
-    height: 45vh;
+    padding: 2em 0em;
     width: 100%;
     background: #ee9ca7;
     background: -webkit-linear-gradient(to bottom, #ffdde1, #ee9ca7);
     background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
-
     border: 2px;
     border-style: solid;
     border-color: #965959;
